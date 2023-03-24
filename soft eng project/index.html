@@ -8,16 +8,17 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="./style.css">
+		<script src="./index.js"></script>
 		<style>
 			body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 		</style>
 	</head>
-	<body class="w3-light-grey">
+	<body class="w3-light-grey" onload="load();">
 
 		<!-- Navigation Bar -->
 		<div class="w3-bar w3-white w3-large">
 			<a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="w3-margin-right"></i>AirNest</a>
-			<a href="#rooms" class="w3-bar-item w3-button w3-mobile">Flights</a>
+			<a href="#flights" class="w3-bar-item w3-button w3-mobile">Flights</a>
 			<a href="#about" class="w3-bar-item w3-button w3-mobile">About</a>
 			<a href="#contact" class="w3-bar-item w3-button w3-right w3-light-grey w3-mobile">Help</a>
 		</div>
@@ -25,7 +26,7 @@
 		<header class="w3-display-container w3-content" style="background-image: url(./Images/vancouver.jpg); max-width: 100%; height: 800px; background-size: cover;">
 			<div class="w3-display-left w3-padding w3-col l6 m8">
 				<div class="w3-container w3-red">
-					<h2><i class="w3-margin-right"></i>Flight Location</h2>
+					<h2><i class="w3-margin-right"></i>Flight Details</h2>
 				</div>
 				<div class="w3-container w3-white w3-padding-16">
 					<form action="/action_page.php" target="_blank">
@@ -73,7 +74,7 @@
 		<!-- Page content -->
 		<div class="w3-content" style="max-width:1532px;">
 
-		<div class="w3-container w3-margin-top" id="rooms">
+		<div class="w3-container w3-margin-top" id="flights">
 			<h3>Flights</h3>
 			<p>Best and cheapest flights in the industry</p>
 		</div>
