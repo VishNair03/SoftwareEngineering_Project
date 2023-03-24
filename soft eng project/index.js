@@ -13,6 +13,10 @@ const load = () => {
         e.value = e.min;
     });
 
+    document.querySelector('input[name="name"]').value = 'name';
+    document.querySelector('input[name="email"]').value = 'test@email.com';
+    document.querySelector('input[name="message"]').value = 'Message';
+
     const buttons = [...document.querySelectorAll('.flight-locations button')];
     const toSelect = document.querySelector('select');
     const header = document.querySelector('header');
