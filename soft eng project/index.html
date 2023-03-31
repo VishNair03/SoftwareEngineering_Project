@@ -31,27 +31,17 @@
 				<div class="w3-container w3-white w3-padding-16">
 					<form action="/action_page.php" target="_blank">
 						<div class="w3-row-padding" style="margin:0 -16px;">
-							<div class="w3-half w3-margin-bottom">
-								<label><i class=""></i> From</label>
-								<input class="w3-input w3-border" type="text" placeholder="" value="Thunder Bay" disabled name="CheckIn" required>
-							</div>
 							<div class="w3-half">
-								<label><i class=""></i> To</label>
+								<label><i class=""></i> Destination</label>
 								<select class="w3-input w3-border" name="CheckOut" required>
 									<option>Vancouver</option>
 									<option>Toronto</option>
 									<option>Chicago</option>
 								</select>
 							</div>
-						</div>
-						<div class="w3-row-padding" style="margin:0 -16px;">
 							<div class="w3-half w3-margin-bottom">
 								<label><i class="fa fa-calendar-o"></i> Depart</label>
 								<input class="w3-input w3-border" type="date" placeholder="DD/MM/YYYY" min="2023-03-24" name="CheckIn" required>
-							</div>
-							<div class="w3-half w3-margin-bottom">
-								<label><i class="fa fa-calendar-o"></i> Return</label>
-								<input class="w3-input w3-border" type="date" placeholder="DD/MM/YYYY" min="2023-03-24" name="CheckOut" required>
 							</div>
 						</div>
 						<div class="w3-half"></div>
@@ -78,6 +68,9 @@
 			<h3>Flights</h3>
 			<p>Best and cheapest flights in the industry</p>
 		</div>
+
+
+
 		<div class="w3-row-padding w3-padding-16 flight-locations">
 			<div class="w3-third w3-margin-bottom">
 				<div class="location-image" style="background-image: url(./Images/VancoverSmall.jpg);"></div>
@@ -118,15 +111,15 @@
 
 				<div class="w3-container" id="contact">
 					<h2>Contact</h2>
-					<p>If you have any questions, do not hesitate to ask them.</p>
+					<p>If you have any questions, don't hesitate to contact us!</p>
 					<i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Thunder Bay, ONT<br>
 					<i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: +999 9999 9999<br>
 					<i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email: mailof@mail.com<br>
 					<form action="./contact.php" method="post" target="_blank">
-						<p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="name"></p>
-						<p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email" required name="email"></p>
+						<p><input class="w3-input w3-padding-16 w3-border" maxlength="45" type="text" placeholder="Name" required name="name"></p>
+						<p><input class="w3-input w3-padding-16 w3-border" maxlength="45" type="email" placeholder="Email" required name="email"></p>
 						<p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="message"></p>
-						<a href="contactPage.html"><button>Submit</button></a>
+						<a href="javascript://"><button>Submit</button></a>
 					</form>
 				</div>
 			</div>
