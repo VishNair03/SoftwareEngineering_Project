@@ -27,4 +27,16 @@ const load = () => {
             header.scrollIntoView();
         });
     }
+    
+    const dialog = document.querySelector('#dialogContainer');
+    dialog.addEventListener('click', (evt) => {
+        if (evt.target === dialog) {
+            dialog.style = 'display: none;';
+        }
+    });
+}
+
+window.dialogPopup = () => {
+    const dialog = document.querySelector('#dialogContainer');
+    dialog.style='';
 }

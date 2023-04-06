@@ -56,6 +56,11 @@
 							</div>
 						</div>
 						<button class="w3-button w3-dark-grey" type="submit"><i class="fa fa-search w3-margin-right"></i> Search availability</button>
+						<div style="display:inline;float:right;">
+							<a href="javascript:dialogPopup()">
+								Need to cancel a flight?
+							</a>
+						</div>
 					</form>
 				</div>
 			</div>
@@ -64,62 +69,88 @@
 		<!-- Page content -->
 		<div class="w3-content" style="max-width:1532px;">
 
-		<div class="w3-container w3-margin-top" id="flights">
-			<h3>Flights</h3>
-			<p>Best and cheapest flights in the industry</p>
+			<div class="w3-container w3-margin-top" id="flights">
+				<h3>Flights</h3>
+				<p>Best and cheapest flights in the industry</p>
+			</div>
+
+
+
+			<div class="w3-row-padding w3-padding-16 flight-locations">
+				<div class="w3-third w3-margin-bottom">
+					<div class="location-image" style="background-image: url(./Images/VancoverSmall.jpg);"></div>
+					<div class="w3-container w3-white">
+						<h3>Vancouver</h3>
+						<h6 class="w3-opacity">From $99</h6>
+						<p>From Toronto</p>
+						<button class="w3-button w3-block w3-black w3-margin-bottom">Buy Tickets</button>
+					</div>
+				</div>
+				<div class="w3-third w3-margin-bottom">
+					<div class="location-image" style="background-image: url(./Images/toronto.jpg);"></div>
+					<div class="w3-container w3-white">
+						<h3>Toronto</h3>
+						<h6 class="w3-opacity">From $149</h6>
+						<p>From Vancouver</p>
+						<button class="w3-button w3-block w3-black w3-margin-bottom">Buy Tickets</button>
+					</div>
+				</div>
+				<div class="w3-third w3-margin-bottom">
+					<div class="location-image" style="background-image: url(./Images/Chicago.jpg);"></div>
+					<div class="w3-container w3-white">
+						<h3>Chicago</h3>
+						<h6 class="w3-opacity">From $199</h6>
+						<p>From Toronto</p>
+						<button class="w3-button w3-block w3-black w3-margin-bottom">Buy Tickets</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="w3-row-padding" id="about">
+				<div class="w3-col l4 12">
+					<h3>About</h3>
+					<h6>Our website offer some of the best services to get some of the cheapest local flights. Making your escape from Thunder Bay as cheap as possible!</h6>
+					<p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
+				</div>
+				<div class="w3-col l8 12">
+
+					<div class="w3-container" id="contact">
+						<h2>Contact</h2>
+						<p>If you have any questions, don't hesitate to contact us!</p>
+						<i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Thunder Bay, ONT<br>
+						<i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: +999 9999 9999<br>
+						<i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email: mailof@mail.com<br>
+						<form action="./contact.php" method="post" target="_blank">
+							<p><input class="w3-input w3-padding-16 w3-border" maxlength="45" type="text" placeholder="Name" required name="name"></p>
+							<p><input class="w3-input w3-padding-16 w3-border" maxlength="45" type="email" placeholder="Email" required name="email"></p>
+							<p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="message"></p>
+							<a href="javascript://"><button>Submit</button></a>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 
-
-
-		<div class="w3-row-padding w3-padding-16 flight-locations">
-			<div class="w3-third w3-margin-bottom">
-				<div class="location-image" style="background-image: url(./Images/VancoverSmall.jpg);"></div>
-				<div class="w3-container w3-white">
-					<h3>Vancouver</h3>
-					<h6 class="w3-opacity">From $99</h6>
-					<p>From Toronto</p>
-					<button class="w3-button w3-block w3-black w3-margin-bottom">Buy Tickets</button>
+		<div id="dialogContainer" style="display: none;">
+			<div class="w3-padding w3-col l6 m8">
+				<div class="w3-container w3-red">
+					<h2><i class="w3-margin-right"></i>Cancel a Flight</h2>
 				</div>
-			</div>
-			<div class="w3-third w3-margin-bottom">
-				<div class="location-image" style="background-image: url(./Images/toronto.jpg);"></div>
-				<div class="w3-container w3-white">
-					<h3>Toronto</h3>
-					<h6 class="w3-opacity">From $149</h6>
-					<p>From Vancouver</p>
-					<button class="w3-button w3-block w3-black w3-margin-bottom">Buy Tickets</button>
-				</div>
-			</div>
-			<div class="w3-third w3-margin-bottom">
-				<div class="location-image" style="background-image: url(./Images/Chicago.jpg);"></div>
-				<div class="w3-container w3-white">
-					<h3>Chicago</h3>
-					<h6 class="w3-opacity">From $199</h6>
-					<p>From Toronto</p>
-					<button class="w3-button w3-block w3-black w3-margin-bottom">Buy Tickets</button>
-				</div>
-			</div>
-		</div>
-
-		<div class="w3-row-padding" id="about">
-			<div class="w3-col l4 12">
-				<h3>About</h3>
-				<h6>Our website offer some of the best services to get some of the cheapest local flights. Making your escape from Thunder Bay as cheap as possible!</h6>
-				<p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
-			</div>
-			<div class="w3-col l8 12">
-
-				<div class="w3-container" id="contact">
-					<h2>Contact</h2>
-					<p>If you have any questions, don't hesitate to contact us!</p>
-					<i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Thunder Bay, ONT<br>
-					<i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: +999 9999 9999<br>
-					<i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email: mailof@mail.com<br>
-					<form action="./contact.php" method="post" target="_blank">
-						<p><input class="w3-input w3-padding-16 w3-border" maxlength="45" type="text" placeholder="Name" required name="name"></p>
-						<p><input class="w3-input w3-padding-16 w3-border" maxlength="45" type="email" placeholder="Email" required name="email"></p>
-						<p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="message"></p>
-						<a href="javascript://"><button>Submit</button></a>
+				<div class="w3-container w3-white w3-padding-16">
+					<form action="./cancel.php" target="_blank">
+						<div class="w3-row-padding" style="margin:0 -16px;">
+							<div class="w3-half">
+								<label><i class=""></i> Email</label>
+								<input class="w3-input w3-border" name="email" type="email" required>
+							</div>
+						</div>
+						<div class="w3-row-padding" style="margin:8px -16px;">
+							<div class="w3-half w3-margin-bottom">
+								<label><i class=""></i> Reference Number</label>
+								<input class="w3-input w3-border" type="number" value="" name="ref" min="1" max="99999" required>
+							</div>
+						</div>
+						<button class="w3-button w3-dark-grey" type="submit"><i class="w3-margin-right"></i> Submit</button>
 					</form>
 				</div>
 			</div>
